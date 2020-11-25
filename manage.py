@@ -3,7 +3,6 @@
 import os
 import sys
 
-import numbers
 
 def main():
     """Run administrative tasks."""
