@@ -2,14 +2,14 @@ from django.shortcuts import render
 
 # Create your views here.
 def template(request):
-    return render(request, 'my_personal_portfolio/template.html')
+    return render(request, 'template.html')
 
 def projects(request):
-    return render(request, 'my_personal_portfolio/projects.html')
+    return render(request, 'projects.html')
 
 def profile_page(request):
-    return render(request, 'my_personal_portfolio/profile-page.html')
+    return render(request, 'profile-page.html')
 
 def log_in(request):
-    return render(request, 'my_personal_portfolio/login-page.html')
+    return render(request, 'login-page.html')
 
