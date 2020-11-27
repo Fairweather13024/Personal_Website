@@ -1,4 +1,4 @@
-W"""Personal_Website URL Configuration
+"""Personal_Website URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -14,8 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
+
+import Personal_Website
+from my_personal_portfolio import views
+
 
 urlpatterns = [
+    #path('', include(Personal_Website.urls)),
+    path('', views.template, name = 'home'),
+    path('profile-page/', views.profile_page, name = 'profile-page'),
+    path('projects/', views.projects, name = 'projects'),
+    path('log_in/', views.log_in, name = 'log-in'),
+
     path('admin/', admin.site.urls),
+
 ]
