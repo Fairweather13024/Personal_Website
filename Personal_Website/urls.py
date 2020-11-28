@@ -22,7 +22,7 @@ from my_personal_portfolio import views
 
 urlpatterns = [
     #path('', include(Personal_Website.urls)),
-    path('', views.template, name = 'home'),
+    path('', views.index, name = 'home'),
     path('home/', views.template, name = 'home'),
     path('projects/', views.projects, name = 'projects'),
     path('profile/', views.profile_page),
