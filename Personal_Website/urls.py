@@ -28,7 +28,6 @@ urlpatterns = [
     path('profile/', views.profile_page),
 
     path('login/', views.log_in, name = 'log-in'),
-
     path('admin/', admin.site.urls),
 
 ]

@@ -10,6 +10,6 @@ from my_personal_portfolio.migrations import views
 app_name = 'my_personal_website'
 
 urlpatterns = [
-    path('', views.template, name = 'template'),
+    path('', views.index, name = 'template'),
 
 ]
