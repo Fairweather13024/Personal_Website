@@ -120,7 +120,7 @@
 							<div class="card card-blog">
 								<div class="card-image">
 									<a href="#pablo">
-										<img class="img img-raised" src="{% static 'img/examples/blog6.jpg' %}" />
+										<img class="img img-raised" src="{% static 'img/my_images/IMG-20200904-WA0007.jpg' %}" />
 									</a>
 								</div>
 
@@ -141,7 +141,7 @@
 							<div class="card card-blog">
 								<div class="card-image">
 									<a href="#pablo">
-										<img class="img img-raised" src="{% static 'img/examples/blog8.jpg' %}" />
+										<img class="img img-raised" src="{% static 'img/my_images/jpmorgan-chase.svg'%}" />
 									</a>
 								</div>
 								<div class="card-content">
@@ -205,7 +205,7 @@
 							<div class="card card-blog">
 								<div class="card-image">
 									<a href="#pablo">
-										<img class="img img-raised" src="{% static 'img/examples/blog6.jpg' %}" />
+										<img class="img img-raised" src="{% static 'img/my_images/neural.svg' %}" />
 									</a>
 								</div>
 
@@ -226,7 +226,7 @@
 							<div class="card card-blog">
 								<div class="card-image">
 									<a href="#pablo">
-										<img class="img img-raised" src="{% static 'img/examples/blog8.jpg' %}" />
+										<img class="img img-raised" src="{% static 'img/my_images/nlp.jfif' %}" />
 									</a>
 								</div>
 								<div class="card-content">
@@ -247,7 +247,7 @@
 							<div class="card card-blog">
 								<div class="card-image">
 									<a href="#pablo">
-										<img class="img img-raised" src="{% static 'img/examples/blog7.jpg' %}" />
+										<img class="img img-raised" src="{% static 'img/my_images/regression.png'%}" />
 									</a>
 								</div>
 
@@ -291,7 +291,7 @@
 							<div class="card card-blog">
 								<div class="card-image">
 									<a href="#pablo">
-										<img class="img img-raised" src="{% static 'img/examples/blog6.jpg' %}" />
+										<img class="img img-raised" src="{% static 'img/my_images/branded-widget.png' %}" />
 									</a>
 								</div>
 
@@ -312,7 +312,7 @@
 							<div class="card card-blog">
 								<div class="card-image">
 									<a href="#pablo">
-										<img class="img img-raised" src="{% static 'img/examples/blog8.jpg' %}" />
+										<img class="img img-raised" src="{% static 'img/my_images/task.PNG' %}" />
 									</a>
 								</div>
 								<div class="card-content">
@@ -333,7 +333,7 @@
 							<div class="card card-blog">
 								<div class="card-image">
 									<a href="#pablo">
-										<img class="img img-raised" src="{% static 'img/examples/blog7.jpg' %}" />
+										<img class="img img-raised" src="{% static 'img/my_images/Travelling_salesman_problem_solved_with_simulated_annealing.gif' %}" />
 									</a>
 								</div>
 
@@ -642,14 +642,31 @@ Points to Note:
                     </iframe>
 <!-- EndOf YouTube Videos -->
 
-
-
-
-
-
-
-
 </body>
+
+<!-- Navigation mobile -->
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Top Navigation Menu -->
+<div class="topnav" id = "mobile_nav">
+  <a href="#home" class="active">Logo</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<!-- Navigtion mobile end -->
+
+
+
+
 
 	<!--   Core JS Files   -->
 	<script src="{% static  'js/jquery.min.js' %}" type="text/javascript"></script>
