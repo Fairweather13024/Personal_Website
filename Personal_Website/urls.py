@@ -22,6 +22,7 @@ from my_personal_portfolio import views
 
 urlpatterns = [
     #path('', include(Personal_Website.urls)),
+
     path('', views.index),
     path('home/', views.index, name = 'home'),
     path('projects/', views.projects, name = 'projects'),
@@ -30,5 +31,6 @@ urlpatterns = [
     path('login/', views.log_in, name = 'log-in'),
     path('admin/', admin.site.urls),
     path('sign_up/', views.registration, name = "sign_up"),
-
+    path('stock/', views.success, name = 'stock'),
+    path('logout/', views.logout, name = 'logout')
 ]

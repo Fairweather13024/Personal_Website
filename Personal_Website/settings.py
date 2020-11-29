@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'Personal_Website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'master.sqlite3',
     }
 }
 
@@ -120,7 +120,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)`
 #https://docs.djangoproject.com/en/3.1/howto/static-files/
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -132,5 +131,7 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, "static")
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
+LOGIN_REDIRECT_URL = 'stock'
+LOGOUT_REDIRECT_URL = 'home'
 
 #remembr that gunicorn is a unix enabled thing and windows has a totally different wsgi server http replacement
