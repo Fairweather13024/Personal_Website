@@ -131,6 +131,8 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, "static")
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
 
+LOGIN_URL = '/login'
+
 LOGIN_REDIRECT_URL = 'stock'
 LOGOUT_REDIRECT_URL = 'home'
 

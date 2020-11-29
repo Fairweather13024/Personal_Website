@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.contrib.auth.views import LogoutView
 
 import Personal_Website
 from my_personal_portfolio import views
@@ -32,5 +33,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('sign_up/', views.registration, name = "sign_up"),
     path('stock/', views.success, name = 'stock'),
-    path('logout/', views.logout, name = 'logout')
+    path('logout/', LogoutView.as_view(), name='logout'),
 ]

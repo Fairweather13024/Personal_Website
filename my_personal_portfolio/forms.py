@@ -16,6 +16,9 @@ class Signup(forms.ModelForm):
                 'class': 'form-control',
                 'maxlength': 50,
                 'placeholder': "Password..."
+            }),
+            'last_login': forms.HiddenInput(attrs={
+                'value': '2020'
             })
         }
 
