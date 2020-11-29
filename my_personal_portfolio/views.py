@@ -47,7 +47,7 @@ def log_in(request):
 
 def registration(request):
     context = {}
-    form = Signup(request.POST or None)
+    form = UserCreationForm(request.POST or None)
 
     if request.method == "POST":
         if form.is_valid():
