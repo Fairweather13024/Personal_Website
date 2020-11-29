@@ -13,6 +13,16 @@
 /* ANIMATION */
 /* SHADOWS */
 /* Shadows (from mdl http://www.getmdl.io/) */
+
+/* I added this*/
+#Meet_Fairweather h2{
+    font-weight: 100 !important;
+    font-family: "Roboto Slab", "Times New Roman", serif !important;
+}
+
+
+
+
 body {
     background-color: #E5E5E5;
     color: #3C4858;

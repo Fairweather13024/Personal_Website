@@ -15,3 +15,6 @@ def profile_page(request):
 def log_in(request):
     return render(request, 'login-page.html')
 
+def registration(request):
+    return render(request, 'sign_up.html')
+

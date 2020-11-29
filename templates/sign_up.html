@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Login Page - Fairweather's Stock Analysis Page</title>
+    <title>Registration Page - Fairweather's Stock Analysis Page</title>
 
     {% load static%}
 	<meta charset="utf-8" />
@@ -29,12 +29,20 @@
 				<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
 					<div class="card card-signup">
 						<form class="form" method="" action="">
-							<div class="header header-primary text-center" style="background: #3f55b1;">
-								<h4 class="card-title">Log in</h4>
-                                <small>Your information will not be shared anywhere</small>
+							<div class="header header-primary text-center" style="background: #3f55b1;>
+								<h4 class="card-title">Registration</h4>
+
 							</div>
-							<p class="description text-center">See what is possible within!</p>
+							<p class="description text-center">Set up with us now!</p>
 							<div class="card-content">
+
+								<div class="input-group">
+									<span class="input-group-addon">
+										<i class="material-icons">face</i>
+									</span>
+									<input type="text" class="form-control" placeholder="First Name...">
+								</div>
+
 								<div class="input-group">
 									<span class="input-group-addon">
 										<i class="material-icons">email</i>
@@ -56,12 +64,13 @@
 										<input type="checkbox" name="optionsCheckboxes" checked>
 										Subscribe to newsletter
 									</label>
+
 							</div>
-
 							<div class="footer text-center">
-                                <button type = "submit" class="btn btn-primary btn-simple btn-wd btn-lg" style = "color: #3f55b1; font-weight: 700">Log In</button>
-								<a href = "/sign_up" class="btn btn-primary btn-simple btn-wd btn-lg">Register</a>
-
+							<div class="footer text-center">
+                                <button type = "submit" class="btn btn-primary btn-simple btn-wd btn-lg" style = "color:#3f55b1; font-weight: 700;">Register</button>
+								<a href = "/login" class="btn btn-primary btn-simple btn-wd btn-lg">Back To Log In</a>
+							</div>
 							</div>
 						</form>
 					</div>

@@ -131,3 +131,6 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, "static")
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+
+#remembr that gunicorn is a unix enabled thing and windows has a totally different wsgi server http replacement
