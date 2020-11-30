@@ -36,7 +36,7 @@ def success(request):
 
 def log_in(request):
     if request.user.is_authenticated:
-        return redirect('stock')
+        return render(request, 'stock.html')
 
     context = {}
     form = Login(request.POST or None)
@@ -66,7 +66,7 @@ def registration(request):
             user = form.save()
             login(request, user)
             context['message'] = "Signup successful. Login here."
-            return redirect('stock')
+            return render(request, 'stock.html')
         else:
             context['message'] = "Play around with your password a bit more & try again."
 

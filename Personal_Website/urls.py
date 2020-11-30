@@ -37,10 +37,10 @@ urlpatterns = [
     path('projects/', views.projects, name = 'projects'),
     path('profile/', views.profile_page),
 
-    path('login/', views.log_in, name = 'log-in'),
+    path('login/', views.log_in, name = 'login'),
     path('admin/', admin.site.urls),
     path('sign_up/', views.registration, name = "sign_up"),
-    path('stock/', views.success, name = 'stock'),
+    path('stock/', views.stock, name = 'stock'),
     path('logout/', LogoutView.as_view(), name='logout'),
 
     path('accounts/', include('django.contrib.auth.urls')),  # resetting passwords
@@ -54,6 +54,6 @@ urlpatterns = [
          auth_views.PasswordResetCompleteView.as_view(template_name='password/password_reset_complete.html'),
          name='password_reset_complete'),
     path("password_reset", views.password_reset_request, name="password_reset"),
-    path("stock/", views.stock),
+
 
 ]
