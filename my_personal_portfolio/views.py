@@ -66,7 +66,7 @@ def registration(request):
             user = form.save()
             login(request, user)
             context['message'] = "Signup successful. Login here."
-            return render(request, 'stock.html')
+            return render(request,'accounts/login-page.html')
         else:
             context['message'] = "Play around with your password a bit more & try again."
 
